@@ -1,0 +1,23 @@
+{
+  "name": "cleanpath",
+  "version": "1.0.0",
+  "description": "Remove relative path",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build",
+    "test": "npm run build && node dist/test.js"
+  },
+  "keywords": [
+    "path"
+  ],
+  "author": "XuPeiYao",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-copy": "^1.0.1",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-typescript": "^3.2.3",
+    "typescript": "~2.4.2"
+  }
+}

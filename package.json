@@ -1,15 +1,18 @@
 {
   "name": "cleanpath",
   "version": "1.0.0",
-  "description": "Remove relative path",
+  "description": "Clean relative path",
   "main": "index.js",
   "scripts": {
     "build": "gulp build",
     "test": "npm run build && node dist/test.js"
   },
-  "keywords": [
-    "path"
-  ],
+  "keywords": ["path"],
+  "homepage": "https://github.com/XuPeiYao/cleanPath",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XuPeiYao/cleanPath.git"
+  },
   "author": "XuPeiYao",
   "license": "MIT",
   "devDependencies": {

@@ -51,11 +51,7 @@ gulp.task('build', ['clean', 'create-index'], function() {
     .pipe(gulp.dest('dist'))
     .pipe(
       gulp
-        .src([
-          'package.json',
-          '{README,readme}?(.md)',
-          '{LICENSE|license}?(.md)'
-        ])
+        .src(['package.json', '{README,readme}?(.md)', '{LICENSE,license}'])
         .pipe(gulp_copy('./dist/'))
     );
 });

@@ -10,7 +10,11 @@ export function cleanPath(path: string): string {
     if (segs[i].length === 0 || segs[i].trim() === '.') {
       continue;
     }
-    if (segs[i].trim() === '..') {
+    if (
+      segs[i].trim() === '..' &&
+      i > 0 &&
+      (temp[temp.length - 1] !== '.' && temp[temp.length - 1] !== '..')
+    ) {
       temp.pop();
       continue;
     }
